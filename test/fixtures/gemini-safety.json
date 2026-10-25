@@ -1,0 +1,4 @@
+{
+  "candidates": [{"finishReason": "SAFETY", "index": 0}],
+  "usageMetadata": {"promptTokenCount": 41, "totalTokenCount": 41}
+}

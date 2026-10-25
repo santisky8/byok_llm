@@ -1,0 +1,9 @@
+{
+  "id": "msg_01",
+  "type": "message",
+  "role": "assistant",
+  "model": "claude-haiku-4-5",
+  "content": [{"type": "text", "text": "```json\n{\"steps\": [\"Buy shoes\", \"Run 2 km\"]}\n```"}],
+  "stop_reason": "end_turn",
+  "usage": {"input_tokens": 52, "output_tokens": 19}
+}

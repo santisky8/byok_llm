@@ -1,0 +1,19 @@
+name: byok_llm
+description: >-
+  Typed JSON replies from Gemini, Claude, OpenAI and any OpenAI-compatible
+  service with the user's own API key, falling back across models when one
+  is rate limited, busy or retired.
+version: 0.1.0
+repository: https://github.com/santisky8/byok_llm
+issue_tracker: https://github.com/santisky8/byok_llm/issues
+topics: [llm, ai, gemini, openai, anthropic]
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  http: ^1.5.0
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.26.0

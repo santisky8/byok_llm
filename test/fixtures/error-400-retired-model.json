@@ -1,0 +1,1 @@
+{"error": {"message": "The model `llama-3.1-70b-versatile` has been decommissioned and is no longer supported.", "type": "invalid_request_error", "code": "model_decommissioned"}}

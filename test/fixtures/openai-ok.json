@@ -1,0 +1,12 @@
+{
+  "id": "chatcmpl-1",
+  "object": "chat.completion",
+  "choices": [
+    {
+      "index": 0,
+      "message": {"role": "assistant", "content": "Here you go: {\"steps\": [\"Buy shoes\", \"Run 2 km\"]} Good luck!"},
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {"prompt_tokens": 60, "completion_tokens": 21, "total_tokens": 81}
+}

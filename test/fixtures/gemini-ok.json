@@ -1,0 +1,9 @@
+{
+  "candidates": [
+    {
+      "content": {"role": "model", "parts": [{"text": "{\"steps\": [\"Buy shoes\", \"Run 2 km\"]}"}]},
+      "finishReason": "STOP"
+    }
+  ],
+  "usageMetadata": {"promptTokenCount": 41, "candidatesTokenCount": 12, "totalTokenCount": 53}
+}
