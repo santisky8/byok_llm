@@ -245,6 +245,20 @@ class OpenAiCompatible implements LlmProvider {
          models: models,
        );
 
+  /// Demon Route: open-weight, abliterated and community fine-tuned
+  /// models behind one OpenAI-compatible key. Full list at
+  /// https://demonroute.com/models.
+  const OpenAiCompatible.demonRoute({
+    List<String> models = const [
+      'huihui-ai/Huihui-gemma-4-31B-it-abliterated-v2',
+      'TheDrummer/Cydonia-24B-v4.1',
+    ],
+  }) : this(
+         name: 'Demon Route',
+         baseUrl: 'https://api.demonroute.com/v1',
+         models: models,
+       );
+
   @override
   final String name;
 

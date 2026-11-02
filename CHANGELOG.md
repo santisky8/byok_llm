@@ -1,3 +1,7 @@
+## Unreleased
+
+- `OpenAiCompatible.demonRoute()` preset for Demon Route.
+
 ## 0.1.0
 
 First release.
