@@ -5,7 +5,7 @@
 
 Typed JSON replies from LLMs, using the user's own API key ("bring your own key").
 
-`byok_llm` is for apps whose users paste their own key for Gemini, Claude, OpenAI, Groq, OpenRouter, Mistral or any other OpenAI-compatible service. You make one call and get back a typed value. Free tiers run out often, models get retired and servers get busy, so the client tries the next model in your list before it gives up. When everything fails, the error is a sealed type, and the compiler makes you handle each case.
+`byok_llm` is for apps whose users paste their own key for Gemini, Claude, OpenAI, Groq, OpenRouter, Mistral, Demon Route or any other OpenAI-compatible service. You make one call and get back a typed value. Free tiers run out often, models get retired and servers get busy, so the client tries the next model in your list before it gives up. When everything fails, the error is a sealed type, and the compiler makes you handle each case.
 
 It is pure Dart with one dependency (`package:http`), so it works in Flutter on every platform, on the server and in the CLI.
 
@@ -53,6 +53,7 @@ print(result.usage);    // Usage(input: 41, output: 12), when reported
 | Groq | `OpenAiCompatible.groq()` | sent in the system prompt, JSON mode on |
 | OpenRouter | `OpenAiCompatible.openRouter(appName: 'My App')` | sent in the system prompt, JSON mode on |
 | Mistral | `OpenAiCompatible.mistral()` | sent in the system prompt, JSON mode on |
+| Demon Route | `OpenAiCompatible.demonRoute()` | sent in the system prompt, JSON mode on |
 | Anything else that speaks OpenAI's format | `OpenAiCompatible(name:, baseUrl:, models:)` | sent in the system prompt, JSON mode on |
 
 Each provider has a default model list, and you can pass your own. The client tries the models in order:

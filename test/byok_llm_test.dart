@@ -123,6 +123,20 @@ void main() {
       },
     );
 
+    test('Demon Route preset uses its own address', () async {
+      final f = fake(const OpenAiCompatible.demonRoute(), [
+        reply('openai-ok.json'),
+      ]);
+      await ask(f.client);
+      expect(
+        f.sent.single.url.toString(),
+        'https://api.demonroute.com/v1/chat/completions',
+      );
+      expect(f.sent.single.headers['authorization'], 'Bearer k');
+      final body = jsonDecode(f.sent.single.body) as Map;
+      expect(body['model'], 'huihui-ai/Huihui-gemma-4-31B-it-abliterated-v2');
+    });
+
     test('OpenRouter without an app name sends no x-title', () async {
       final f = fake(OpenAiCompatible.openRouter(), [reply('openai-ok.json')]);
       await ask(f.client);
